@@ -10,13 +10,13 @@
   - Multi partner option
   - Image saves as different sizes for better performance
   - Low stock alerts
-  - Separate ready to use dashboard for admins
+  - Separate ready-to-use dashboard for admins
   - Ability to generate reports
-  - Have extension that provide drf api
+  - Have an extension that provides drf api
 - SEO
   - Google analytic support
-  - seo friendly urls
-  - seo options on image/products
+  - SEO friendly urls
+  - SEO options on image/products
 - Customer features
   - Product rating + comment
   - Order history
@@ -24,11 +24,10 @@
   - Product alerts when became available
 
 Cons 🚫
-
-- Paypal no support for REST API
-- Outdated documentation on plugins (paypal)
+- Paypal has no support for REST API
+- Outdated documentation on plugins (PayPal)
 - Broken pillow dependency 'pillow>=6.0' 10.0.0 have `ANTIALIAS` deprecation
-- Payment extensions are outdated and not compatible with main oscar version
+- Payment extensions are outdated and not compatible with the main oscar version
 
 ## ER diagram
 
@@ -36,7 +35,7 @@ Cons 🚫
 
 ## Setup your shop
 
-- `poetry init` add `django` as main dependency
+- `poetry init` add `django` as the main dependency
 - `django-admin startproject your_shop .`
 - `poetry add 'django-oscar[sorl-thumbnail]'`
 - Add to your `settings.py`
@@ -165,7 +164,7 @@ Currently don't work with django-oscar 3+
 ### django-oscar-api
 
 - Install `poetry add django-oscar-api`
-- Apply migraiton `python manage.py migrate`
+- Apply migration `python manage.py migrate`
 - Add to urls
 
 ```python
@@ -178,7 +177,6 @@ urlpatterns = [
 ![api](./docs/screenshots/oscarapi.png)
 
 ## Summary
-
-`django-oscar` is more mature and refined solution for ecommerce than `django-ecommerce`
-It also can be extended as separate DRF-api for custom FE to be added.
-Only week side that `django-oscar` have is their extension for payment(using legacy methods, don't support latest version of `django-oscar`)
+`django-oscar` is a more mature and refined solution for ecommerce than `django-ecommerce`
+It also can be extended as a separate DRF-api for custom FE to be added.
+only weak side that `django-oscar` have is their extension for payment(using legacy methods, don't support the latest version of `django-oscar`)
